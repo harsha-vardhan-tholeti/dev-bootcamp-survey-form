@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 id="title">Dev Bootcamp Survey Form</h1>
+      <p id="description">This is a survey regarding my new private sessions</p>
+      <form id="survey-form" action="https://google.com">
+        <div class="form-fields">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name Here..."
+            required
+          />
+        </div>
+        <div class="form-fields">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email Here..."
+            required
+          />
+        </div>
+        <div class="form-fields">
+          <label for="number" id="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="16"
+            placeholder="Enter Your Age Here..."
+            required
+          />
+        </div>
+        <div class="form-fields">
+          <label for="month" id="dd-label">Domain</label>
+          <select name="month" id="dropdown">
+            <option value="default">SELECT THE DOMAIN YOU WANT TO LEARN</option>
+            <option value="fed">FRONT END DEVELOPER</option>
+            <option value="bed">BACK END DEVELOPER</option>
+            <option value="fsd">FULL STACK DEVELOPER</option>
+          </select>
+        </div>
+        <div class="form-fields">
+          <label for="year" id="dd-label">Select Level</label>
+          <div class="radios">
+            <input
+              type="radio"
+              id="beginner"
+              name="fav_language"
+              value="beginner"
+            />
+            <label for="beginner">Beginner</label><br />
+            <input
+              type="radio"
+              id="intermediate"
+              name="fav_language"
+              value="intermediate"
+            />
+            <label for="intermediate">intermediate</label><br />
+            <input
+              type="radio"
+              id="advanced"
+              name="fav_language"
+              value="advanced"
+            />
+            <label for="advanced">Advanced</label>
+          </div>
+        </div>
+        <div class="form-fields">
+          <label for="year" id="dd-label"
+            >Select What You Have From Here...</label
+          >
+          <div class="checkboxs">
+            <input type="checkbox" value="laptop" />
+            <label for="">Laptop</label>
+
+            <input type="checkbox" value="internet" />
+            <label for="">Internet</label>
+
+            <input type="checkbox" value="commitment" />
+            <label for="">commitment</label>
+          </div>
+        </div>
+
+        <div class="form-fields">
+          <label for="message">Tell Me Your Story Here</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-fields submit">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
